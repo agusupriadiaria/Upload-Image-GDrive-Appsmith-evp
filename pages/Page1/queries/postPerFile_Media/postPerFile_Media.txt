@@ -1,0 +1,14 @@
+--boundary123
+content-type: application/json; charset=UTF-8
+
+{
+  "name": "namafile.jpg",
+  "description": "ini deskripsi file"
+}
+
+--boundary123
+content-type: {{FilePicker1.files[0].type}}
+
+{{FilePicker1.files[0].data}}
+
+--boundary123--

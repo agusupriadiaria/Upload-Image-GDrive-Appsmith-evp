@@ -1,0 +1,4 @@
+{
+  "contents": "{{Base64File}}",
+  "type": "{{FileType}}"
+}
