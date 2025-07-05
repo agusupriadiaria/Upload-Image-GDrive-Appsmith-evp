@@ -11,7 +11,7 @@
           "value": "text/plain"
         }
       ],
-      "body": "--boundary123\ncontent-type: application/json; charset=UTF-8\n\n{\n  \"name\": \"namafile.jpg\",\n  \"description\": \"ini deskripsi file\"\n}\n\n--boundary123\ncontent-type: {{FilePicker1.files[0].type}}\n\n{{FilePicker1.files[0].data}}\n\n--boundary123--\n",
+      "body": "{{FilePicker1.files[0].raw}}",
       "bodyFormData": [
         {
           "key": "media",
@@ -31,7 +31,7 @@
       "headers": [
         {
           "key": "content-type",
-          "value": "multipart/related; boundary=boundary123"
+          "value": "{{FilePicker1.files[0].type}}"
         }
       ],
       "httpMethod": "POST",
@@ -46,7 +46,7 @@
       "queryParameters": [
         {
           "key": "uploadType",
-          "value": "multipart"
+          "value": "media"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -67,6 +67,9 @@
       },
       {
         "key": "body"
+      },
+      {
+        "key": "headers[0].value"
       }
     ],
     "name": "postPerFile_Media",
