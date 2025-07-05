@@ -1,5 +1,7 @@
 {
-  "allowedFileTypes": [],
+  "allowedFileTypes": [
+    ".png"
+  ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 12,
@@ -13,8 +15,9 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [],
   "dynamicTyping": true,
-  "fileDataType": "Base64",
+  "fileDataType": "Binary",
   "files": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
